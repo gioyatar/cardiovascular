@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.white-bar {
+    border: none;
+    height: 4px;
+    background-color: white;
+    margin-top: -15px;
+    margin-bottom: 3%;
+}
+
+#topNav li a:hover {
+    color: #ffe6e6;
+}
+
+/* Sections */
+#introSection {
+    background: transparent;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    padding-left: 7.25%;
+    padding-right: 7.25%;
+    background: #8B0000;
+}
+
+#overviewSection {
+    background-color: #FDF5F5;
+    color: white;
+    padding: 60px 7.25%;
+}
+
+#videoSection {
+    background-color: #5A2323;
+    background-size: 102%;
+    padding: 60px 7.25%;
+}
+
+/* Navigation Bar */
+#topNav {
+    background: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 3.5%;
+}
+
+#topNav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#topNav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 125%;
+    left: 12%;
+    gap: 5px;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.dropdown-content li {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    list-style: none;
+}
+
+.dropdown-content li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown:hover .dropdown-content li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Top Section Contents */
+#contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#textContent {
+    max-width: 94%;
+}
+
+#slogan {
+    color: white;
+    font-size: 595%;
+}
+
+#description {
+    color: white;
+    font-size: 145%;
+    margin-top: 10%;
+}
+
+#learnButton {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#learnButton:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+#mainHeartIMG {
+    max-width: 35%;
+    align-self: center;
+}
+
+/* Middle Section */
+.mainPageH2 {
+    color: #FFE4E1;
+    font-size: 275%;
+    margin-bottom: 120px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    gap: 35px;
+    flex: 1 1 45%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .card img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .card .bottomcard-text h3 {
+    font-size: 32px;
+    position: relative;
+    top: -78px;
+    color: #FFE4E1;
+  }
+
+  .card .bottomcard-text p {
+    font-size: 26px;
+    position: relative;
+    top: -68px;
+    color: #FFE4E1;
+  }
+
+/* Bottom Section */
+#videoH2 {
+    color: white;
+    font-size: 400%;
+    margin-bottom: 15px;
+}
+
+#videoP {
+    color: white;
+    font-size: 115%;
+    margin-bottom: 7%;
+}
+
+#videoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#videoContainer video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#videoContainer video:hover {
+    transform: scale(1.03);
+}

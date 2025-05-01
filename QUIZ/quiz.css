@@ -1,0 +1,54 @@
+.box {
+    display: inline-block;
+    background-color: rgba(247, 0, 0, 0.973);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 8px 0;
+    color: aliceblue;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    width: 60%;
+    transition: all 1s ease;
+}
+
+.box:hover {
+    transition: all 1s ease;
+    width: 70%;
+}
+
+body {
+     background-color: rgb(255, 249, 249);
+}
+
+h4 {
+    color: brown;
+}
+
+.correctid {
+    display: inline-block;
+    background-color: rgba(247, 0, 0, 0.973);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 8px 0;
+    color: aliceblue;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    width: 60%;
+    transition: all 1s ease;
+
+}
+
+.correct-label {
+    background-color: lightgreen;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+.correctid.correct-label {
+    background-color: lightgreen;
+    padding: 5px;
+    border-radius: 5px;
+}
