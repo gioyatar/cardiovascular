@@ -189,35 +189,3 @@ body {
     top: -68px;
     color: #FFE4E1;
   }
-
-/* Bottom Section */
-#videoH2 {
-    color: white;
-    font-size: 400%;
-    margin-bottom: 15px;
-}
-
-#videoP {
-    color: white;
-    font-size: 115%;
-    margin-bottom: 7%;
-}
-
-#videoContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-#videoContainer video {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-#videoContainer video:hover {
-    transform: scale(1.03);
-}
