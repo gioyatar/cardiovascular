@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardiovascular Guess</title>
+  <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+  <section id="introSection">
+    <!-- Navigation Bar -->
+    <nav id="topNav">   
+      <ul>    
+        <li><a href="../index.html">OVERVIEW</a></li>   
+        <li><a href="../KEY ORGANS & FUNCTIONS/organs.html">KEY ORGANS & FUNCTIONS</a></li> 
+        <li><a href="../COMMON DISEASES & DISORDERS/disease.html">COMMON DISEASES & DISORDERS</a></li>  
+        <li><a href="../FUN FACTS/fun.html">FUN FACTS</a></li>  
+        <li class="dropdown">   
+          <a href="#">ACTIVITIES</a>  
+          <ul class="dropdown-content">   
+            <li><a href="../QUIZ/quiz.html">QUIZ</a></li>   
+            <li><a href="guess.html">GUESS</a></li> 
+          </ul>   
+        </li>   
+        <li><a href="../ABOUT/about.html">ABOUT</a></li> 
+      </ul>   
+    </nav>  
+
+    <!-- Quiz Card -->
+    <div class="quiz-card">
+      <h4>What failure is happening?</h4>
+      <img id="questionImage" src="https://www.emergencyphysicians.org/siteassets/emphysicians/all-images/kwtg/heart-attack.jpg" alt="Question Image">
+      <br>
+      <input type="text" id="answer" placeholder="Type your answer here">
+      <br>
+      <button onclick="checkAnswer()" id="submitBtn">Submit</button>
+      <div id="result"></div>
+    </div>
+  </section>
+
+  <script src="guess.js"></script>
+</body>
+</html>
