@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cardiovascular Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <section id="introSection">
+        <!-- Navigation Bar -->
+        <nav id="topNav">   
+            <ul>    
+                <li><a href="../index.html">OVERVIEW</a></li>   
+                <li><a href="../KEY ORGANS & FUNCTIONS/organs.html">KEY ORGANS & FUNCTIONS</a></li> 
+                <li><a href="../COMMON DISEASES & DISORDERS/disease.html">COMMON DISEASES & DISORDERS</a></li>  
+                <li><a href="../FUN FACTS/fun.html">FUN FACTS</a></li>  
+                <li class="dropdown">   
+                <a href="#">ACTIVITIES</a>  
+                <ul class="dropdown-content">   
+                    <li><a href="quiz.html">QUIZ</a></li>   
+                    <li><a href="#">GUESS</a></li>  
+                    <li><a href="#">PUZZLE</a></li> 
+                </ul>   
+                </li>   
+                <li><a href="../ABOUT/about.html">ABOUT</a></li> 
+            </ul>   
+        </nav>  
+        <div id="quiz-container">   
+            <div id="quiz"> 
+            <!-- Questions will appear here --> 
+            <div id="question"></div>   
+            <div id="choices"></div>  
+        </div>  
+
+        <div class="navigation">    
+        <button id="prevBtn" onclick="prevQuestion()">Previous</button>   
+        <button id="nextBtn" onclick="nextOrSubmit()">Next</button>   
+        </div>  
+
+        <div id="result"></div> 
+
+    <script src="quiz.js"></script>   
+    </section>
+</body>
+</html>

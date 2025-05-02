@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+  /* Sections */
+#introSection {
+    background: transparent;
+    padding-top: 1%;
+    padding-bottom: 12.5%;
+    padding-left: 7.25%;
+    padding-right: 7.25%;
+    background: #B22222;
+}
+
+  /* Navigation Bar */
+#topNav {
+    background: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 3.5%;
+}
+
+#topNav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#topNav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 125%;
+    left: 12%;
+    gap: 5px;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.dropdown-content li {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    list-style: none;
+}
+
+.dropdown-content li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown:hover .dropdown-content li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  #quiz-container {
+    max-width: 600px;
+    margin: auto;
+    background: #FFE4E1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  #question {
+    color: #800000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .choice {
+    display: block;
+    padding: 10px;
+    margin-bottom: -12px;
+    background: #B22222;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .choice:hover {
+    background: #800000;
+  }
+
+  .navigation {
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 10px 15px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  #prevBtn {
+    background-color: rgb(207, 63, 63);
+    color: white;
+  }
+
+  #nextBtn {
+    background-color: #9C1B1B;
+    color: white;
+  }
+
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
